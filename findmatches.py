@@ -1,5 +1,5 @@
-from Accommodation import Accommodation
-from Participant import Participant
+from DatabaseObjects.Accommodation import Accommodation
+from DatabaseObjects.Participant import Participant
 
 
 def return_options(accommodations, group):
