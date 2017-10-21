@@ -7,3 +7,6 @@ class Participant:
 
     def get_size(self):
         return self._size
+
+    def get_id(self):
+        return self._id

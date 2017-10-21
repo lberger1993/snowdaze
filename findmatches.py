@@ -17,13 +17,21 @@ def return_options(accommodations, group):
 
 if __name__ == "__main__":
     participant = Participant(id=1, size=30, nationality="Germany")
+    participant1 = Participant(id=2, size=10, nationality="Germany")
+    participant2 = Participant(id=3, size=1, nationality="Germany")
     kolping = Accommodation(id=1, capacity=20, bus_stop=10)
     rogers = Accommodation(id=2, capacity=10, bus_stop=10)
     high_school = Accommodation(id=3, capacity=30, bus_stop=10)
-    total_options = []
+    total_options = list()
     total_options.append(kolping)
     total_options.append(rogers)
     total_options.append(high_school)
 
-    print(return_options(total_options, participant))
+    participants = list()
+    participants.append(participant)
+    participants.append(participant1)
+    participants.append(participant2)
+    for participant in participants:
+        print(return_options(total_options, participant))
+
 
