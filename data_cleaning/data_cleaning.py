@@ -19,15 +19,3 @@ if __name__ == "__main__":
     location = sys.argv[1]
     df = pd.DataFrame.from_csv(location + 'USERS.csv', encoding='latin-1')
     randomize_users(df)
-
-
-
-
-
-
-
-
-#"_id"	username	emails.0.address	emails.0.verified	profile.settings.enrolled	profile.settings.role	profile.settings.accepted	profile.settings.creator	profile.settings.number	profile.settings.participants	profile.settings.enrolledAt	profile.has_picture	profile.first_name	profile.last_name	profile.temp_id	profile.t_shirt	profile.birth.date	profile.birth.place	profile.birth.country	profile.info.address	profile.info.city	profile.info.zip	profile.info.province	profile.info.country	profile.thursday_activity	profile.friday_activity	profile.course	profile.phone	profile.team_volley	profile.thursday_rental	profile.race	profile.friday_rental	profile.university	profile.food_allergies	profile.beneficiary	profile.IBAN	profile.name_bank	profile.swift_bic
-
-#df = pd.read_csv(location + 'USERS.csv', index_col=["username"], names=["emails.0.address"], encoding='latin-1')
-#print(df)
