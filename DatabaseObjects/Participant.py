@@ -1,4 +1,3 @@
-
 class Participant:
     def __init__(self, id, size, nationality):
         self._id = id
